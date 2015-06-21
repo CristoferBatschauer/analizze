@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Understanding the jQuery Mobile API</title>
+        <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width">
+
+        <link href="./jquery-mobile/jquery.mobile.theme-1.0.min.css" rel="stylesheet" type="text/css" />
+        <link href="./jquery-mobile/jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css" />
+
+        <script src="./jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
+        <script src="./jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+        
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $(".tap-hold-test").bind("taphold", function(event) {
+                    $(this).html("Tapped and held");
+                });
+            });
+        </script>
+    </head>
+
+    <body>
+        <div data-role="page" id="my-page">
+            
+            <div data-role="header">
+                <h1>Header</h1>
+            </div>
+            <div data-role="content">
+                <ul data-role="listview" id="my-list">
+                    <li class="tap-hold-test">Tap and hold test</li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

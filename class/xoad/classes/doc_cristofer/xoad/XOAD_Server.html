@@ -1,0 +1,660 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<title>Docs For Class XOAD_Server</title>
+	<link rel="stylesheet" type="text/css" id="layout" href="../media/layout.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="../media/style.css" media="all">
+	<link rel="stylesheet" type="text/css" href="../media/print.css" media="print">
+</head>
+
+<body>
+<div id="header">
+	<div id="navLinks">
+		[ <a href="../classtrees_XOAD.html">Class Tree: XOAD</a> ]
+		[ <a href="../elementindex_XOAD.html">Index: XOAD</a> ]
+		[ <a href="../elementindex.html">All elements</a> ]
+	</div>
+	<div id="packagePosition">
+		<div id="packageTitle2">XOAD</div>
+		<div id="packageTitle">XOAD</div>
+		<div id="elementPath"> &middot; </div>
+	</div>
+</div>
+
+<div id="nav" class="small">
+	<div id="packages">
+		Packages:
+					<p><a href="../li_XOAD.html">XOAD</a></p>
+			</div>
+
+				<div id="index">
+			<div id="files">
+								Files:<br>
+								<a href="../XOAD/_Client_class_php.html">		Client.class.php
+		</a><br>
+			<a href="../XOAD/_Meta_class_php.html">		Meta.class.php
+		</a><br>
+			<a href="../XOAD/_Observable_class_php.html">		Observable.class.php
+		</a><br>
+			<a href="../XOAD/_Observer_class_php.html">		Observer.class.php
+		</a><br>
+			<a href="../XOAD/_Serializer_class_php.html">		Serializer.class.php
+		</a><br>
+			<a href="../XOAD/_Server_class_php.html">		Server.class.php
+		</a><br>
+			<a href="../XOAD/_Utilities_class_php.html">		Utilities.class.php
+		</a><br>
+		subpackage <b>XOAD_Events</b><br>			<a href="../XOAD/XOAD_Events/_events_storage_File_class_php.html">		File.class.php
+		</a><br>
+			<a href="../XOAD/XOAD_Events/_events_storage_pg_class_php.html">		MySQL.class.php
+		</a><br>
+			<a href="../XOAD/XOAD_Events/_events_storage_PearDB_class_php.html">		PearDB.class.php
+		</a><br>
+			<a href="../XOAD/XOAD_Events/_events_Storage_class_php.html">		Storage.class.php
+		</a><br>
+				</div>
+			<div id="classes">
+				Classes:<br>
+								<a href="../XOAD/XOAD_Client.html">		XOAD_Client
+		</a><br>
+			<a href="../XOAD/XOAD_Meta.html">		XOAD_Meta
+		</a><br>
+			<a href="../XOAD/XOAD_Observable.html">		XOAD_Observable
+		</a><br>
+			<a href="../XOAD/XOAD_Observer.html">		XOAD_Observer
+		</a><br>
+			<a href="../XOAD/XOAD_Serializer.html">		XOAD_Serializer
+		</a><br>
+			<a href="../XOAD/XOAD_Server.html">		XOAD_Server
+		</a><br>
+			<a href="../XOAD/XOAD_Utilities.html">		XOAD_Utilities
+		</a><br>
+		<b>XOAD_Events</b><br>			<a href="../XOAD/XOAD_Events/XOAD_Events_Storage.html">		XOAD_Events_Storage
+		</a><br>
+			<a href="../XOAD/XOAD_Events/XOAD_Events_Storage_File.html">		XOAD_Events_Storage_File
+		</a><br>
+			<a href="../XOAD/XOAD_Events/XOAD_Events_Storage_MySQL.html">		XOAD_Events_Storage_MySQL
+		</a><br>
+			<a href="../XOAD/XOAD_Events/XOAD_Events_Storage_PearDB.html">		XOAD_Events_Storage_PearDB
+		</a><br>
+				</div>
+		</div>
+	</div>
+
+<div id="body">
+	    		<h1>Class: XOAD_Server</h1>
+	<p style="margin: 0px;">Source Location: /Server.class.php</p>
+	
+
+<div class="leftcol">
+	<h3><a href="#class_details">Class Overview</a> <span class="smalllinenumber">[line 77]</span></h3>
+	<div id="classTree"><pre><a href="../XOAD/XOAD_Observable.html">XOAD_Observable</a>
+   |
+   --XOAD_Server</pre>
+</div>
+	<div class="small">
+	<p>XOAD Server Class.</p>
+		<h4>Author(s):</h4>
+	<ul>
+													<li>Stanimir Angeloff</li>
+						</ul>
+	<h4>Version:</h4>
+	<ul>
+								<li>0.6.0.0</li>
+											</ul>
+
+	<h4>Copyright:</h4>
+	<ul>
+													</li>
+	</div>
+</div>
+
+<div class="middlecol">
+	<h3><a href="#class_vars">Variables</a></h3>
+	<ul class="small">
+			</ul>
+	<h3><a href="#class_consts">Constants</a></h3>
+	<ul class="small">
+			</ul>
+</div>
+<div class="rightcol">
+	<h3><a href="#class_methods">Methods</a></h3>
+	<ul class="small">
+				<li><a href="../XOAD/XOAD_Server.html#methodaddObserver">addObserver</a></li>
+				<li><a href="../XOAD/XOAD_Server.html#methodallowClasses">allowClasses</a></li>
+				<li><a href="../XOAD/XOAD_Server.html#methoddenyClasses">denyClasses</a></li>
+				<li><a href="../XOAD/XOAD_Server.html#methoddispatch">dispatch</a></li>
+				<li><a href="../XOAD/XOAD_Server.html#methodhandleError">handleError</a></li>
+				<li><a href="../XOAD/XOAD_Server.html#methodinitializeCallback">initializeCallback</a></li>
+				<li><a href="../XOAD/XOAD_Server.html#methodisClassAllowed">isClassAllowed</a></li>
+				<li><a href="../XOAD/XOAD_Server.html#methodloadClass">loadClass</a></li>
+				<li><a href="../XOAD/XOAD_Server.html#methodmapClass">mapClass</a></li>
+				<li><a href="../XOAD/XOAD_Server.html#methodnotifyObservers">notifyObservers</a></li>
+				<li><a href="../XOAD/XOAD_Server.html#methodrunServer">runServer</a></li>
+				<li><a href="../XOAD/XOAD_Server.html#methodthrowException">throwException</a></li>
+			</ul>
+</div>
+
+<div id="content">
+<hr>
+	<div class="contents">
+	</div>
+
+	<div class="leftCol">
+	<h2>Inherited Variables</h2>
+		<h2>Inherited Constants</h2>
+		</div>
+
+	<div class="rightCol">
+	<h2>Inherited Methods</h2>
+			<div class="indent">
+		<h3>Class: <a href="../XOAD/XOAD_Observable.html">XOAD_Observable</a></h3>
+		<dl class="small">
+						<dt>
+				<a href="../XOAD/XOAD_Observable.html#methodaddObserver">XOAD_Observable::addObserver()</a>
+			</dt>
+			<dd>
+				
+			</dd>
+					<dt>
+				<a href="../XOAD/XOAD_Observable.html#methodnotifyObservers">XOAD_Observable::notifyObservers()</a>
+			</dt>
+			<dd>
+				
+			</dd>
+				</dl>
+		</div>
+		</div>
+	<br clear="all">
+	<hr>
+
+	<a name="class_details"></a>
+	<h2>Class Details</h2>
+	<p align="center"><strong>XOAD Server Class.
+</strong></p>
+<p>This class is used to handle client callbacks.</p><p>Example:</p><p><div class="listing"><pre><ol><li> &lt;?<span class="src-id">php</span></li>
+<li>&nbsp;</li>
+<li> <span class="src-inc">require_once</span><span class="src-sym">(</span><span class="src-str">'xoad.php'</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li>&nbsp;</li>
+<li> <span class="src-key">class </span><span class="src-id">Calculator</span></li>
+<li> <span class="src-sym">{</span></li>
+<li>     <span class="src-key">var </span><span class="src-var">$result</span><span class="src-sym">;</span></li>
+<li>&nbsp;</li>
+<li>     <span class="src-key">function </span><span class="src-id">Calculator</span><span class="src-sym">(</span><span class="src-sym">)</span></li>
+<li>     <span class="src-sym">{</span></li>
+<li>         <span class="src-var">$this</span><span class="src-sym">-&gt;</span><span class="src-var">result </span>= <span class="src-num">0</span><span class="src-sym">;</span></li>
+<li>     <span class="src-sym">}</span></li>
+<li>&nbsp;</li>
+<li>     <span class="src-key">function </span><span class="src-id">Add</span><span class="src-sym">(</span><span class="src-var">$arg</span><span class="src-sym">)</span></li>
+<li>     <span class="src-sym">{</span></li>
+<li>         <span class="src-var">$this</span><span class="src-sym">-&gt;</span><span class="src-var">result </span>+= <span class="src-var">$arg</span><span class="src-sym">;</span></li>
+<li>     <span class="src-sym">}</span></li>
+<li> <span class="src-sym">}</span></li>
+<li>&nbsp;</li>
+<li> <span class="src-id"><a href="../XOAD/XOAD_Server.html">XOAD_Server</a></span><span class="src-sym">::</span><a href="../XOAD/XOAD_Server.html#methodrunServer">runServer</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li>&nbsp;</li>
+<li> <span class="src-php">?&gt;</span></li>
+</ol></pre></div></p><h4>Tags:</h4>
+<ul>
+	<li><b>version</b> - 0.6.0.0</li>
+	<li><b>author</b> - Stanimir Angeloff</li>
+</ul>
+	<p class="small" style="color: #334B66;">[ <a href="#top">Top</a> ]</p>
+
+	<hr>
+	<a name="class_vars"></a>
+	<h2>Class Variables</h2>
+	
+	<hr>
+	<a name="class_methods"></a>
+	<h2>Class Methods</h2>
+		<a name="methodaddObserver"></a>
+	<p></p>
+	<h3>addObserver</h3>
+	<div class="indent">
+		<p>
+		<code>string addObserver(
+mixed
+&$observer)</code>
+		</p>
+	
+		<p class="linenumber">[line 832]</p>
+		<p align="center"><strong>Adds a <a href="../XOAD/XOAD_Server.html">XOAD_Server</a> events observer.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - true on success, false otherwise.</li>
+	<li><b>static</b> - </li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+<p>Overrides <a href="../XOAD/XOAD_Observable.html#methodaddObserver">XOAD_Observable::addObserver()</a> (parent method not documented)</p>
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">mixed</span>
+		<b>$observer</b> 
+		- 
+		The observer object to add (must extend <a href="../XOAD/XOAD_Observer.html">XOAD_Observer</a>).</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodallowClasses"></a>
+	<p></p>
+	<h3>allowClasses</h3>
+	<div class="indent">
+		<p>
+		<code>void allowClasses(
+mixed
+$classes)</code>
+		</p>
+	
+		<p class="linenumber">[line 670]</p>
+		<p align="center"><strong>Adds specified classes to the allowed classes map.
+</strong></p>
+<p>Example:</p><p><div class="listing"><pre><ol><li> &lt;?<span class="src-id">php</span></li>
+<li>&nbsp;</li>
+<li> <span class="src-key">class </span><span class="src-id">AllowedClass</span></li>
+<li> <span class="src-sym">{</span></li>
+<li>     <span class="src-key">function </span><span class="src-id">call</span><span class="src-sym">(</span><span class="src-sym">) </span><span class="src-sym">{ </span><span class="src-key">return </span><span class="src-str">'AllowedClass-&gt;call()'</span><span class="src-sym">; </span><span class="src-sym">}</span></li>
+<li> <span class="src-sym">}</span></li>
+<li>&nbsp;</li>
+<li> <span class="src-key">class </span><span class="src-id">DeniedClass</span></li>
+<li> <span class="src-sym">{</span></li>
+<li>     <span class="src-key">function </span><span class="src-id">call</span><span class="src-sym">(</span><span class="src-sym">) </span><span class="src-sym">{ </span><span class="src-key">return </span><span class="src-str">'DeniedClass-&gt;call()'</span><span class="src-sym">; </span><span class="src-sym">}</span></li>
+<li> <span class="src-sym">}</span></li>
+<li>&nbsp;</li>
+<li> <span class="src-inc">require_once</span><span class="src-sym">(</span><span class="src-str">'xoad.php'</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li>&nbsp;</li>
+<li> <span class="src-id"><a href="../XOAD/XOAD_Server.html">XOAD_Server</a></span><span class="src-sym">::</span><a href="../XOAD/XOAD_Server.html#methodallowClasses">allowClasses</a><span class="src-sym">(</span><span class="src-str">'AllowedClass'</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li>&nbsp;</li>
+<li> <span class="src-key">if </span><span class="src-sym">(</span><span class="src-id"><a href="../XOAD/XOAD_Server.html">XOAD_Server</a></span><span class="src-sym">::</span><a href="../XOAD/XOAD_Server.html#methodrunServer">runServer</a><span class="src-sym">(</span><span class="src-sym">)) </span><span class="src-sym">{</span></li>
+<li>&nbsp;</li>
+<li>     <span class="src-key">exit</span><span class="src-sym">;</span></li>
+<li> <span class="src-sym">}</span></li>
+<li>&nbsp;</li>
+<li> <span class="src-php">?&gt;</span></li>
+<li> <span class="src-php">&lt;?= </span><span class="src-id"><a href="../XOAD/XOAD_Utilities.html">XOAD_Utilities</a></span><span class="src-sym">::</span><a href="../XOAD/XOAD_Utilities.html#methodheader">header</a><span class="src-sym">(</span><span class="src-sym">) </span><span class="src-php">?&gt;</span></li>
+<li>&nbsp;</li>
+<li> &lt;script type=&quot;text/javascript&quot;&gt;</li>
+<li>&nbsp;</li>
+<li> var allowedClass = <span class="src-php">&lt;?= </span><span class="src-id"><a href="../XOAD/XOAD_Client.html">XOAD_Client</a></span><span class="src-sym">::</span><a href="../XOAD/XOAD_Client.html#methodregister">register</a><span class="src-sym">(</span><span class="src-key">new </span><span class="src-id">AllowedClass</span><span class="src-sym">(</span><span class="src-sym">)) </span><span class="src-php">?&gt;</span>;</li>
+<li>&nbsp;</li>
+<li> var deniedClass = <span class="src-php">&lt;?= </span><span class="src-id"><a href="../XOAD/XOAD_Client.html">XOAD_Client</a></span><span class="src-sym">::</span><a href="../XOAD/XOAD_Client.html#methodregister">register</a><span class="src-sym">(</span><span class="src-key">new </span><span class="src-id">DeniedClass</span><span class="src-sym">(</span><span class="src-sym">)) </span><span class="src-php">?&gt;</span>;</li>
+<li>&nbsp;</li>
+<li> alert(allowedClass.call());</li>
+<li>&nbsp;</li>
+<li> // This line will throw an exception.</li>
+<li> // DeniedClass is not in the allowed classes list.</li>
+<li> alert(deniedClass.call());</li>
+<li>&nbsp;</li>
+<li> &lt;/script&gt;</li>
+</ol></pre></div></p><h4>Tags:</h4>
+<ul>
+	<li><b>static</b> - </li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">mixed</span>
+		<b>$classes</b> 
+		- 
+		The classes that can be accessed within                                 a callback request.</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methoddenyClasses"></a>
+	<p></p>
+	<h3>denyClasses</h3>
+	<div class="indent">
+		<p>
+		<code>void denyClasses(
+mixed
+$classes)</code>
+		</p>
+	
+		<p class="linenumber">[line 748]</p>
+		<p align="center"><strong>Adds specified classes to the denied classes map.
+</strong></p>
+<p>Example:</p><p><div class="listing"><pre><ol><li> &lt;?<span class="src-id">php</span></li>
+<li>&nbsp;</li>
+<li> <span class="src-key">class </span><span class="src-id">AllowedClass</span></li>
+<li> <span class="src-sym">{</span></li>
+<li>     <span class="src-key">function </span><span class="src-id">call</span><span class="src-sym">(</span><span class="src-sym">) </span><span class="src-sym">{ </span><span class="src-key">return </span><span class="src-str">'AllowedClass-&gt;call()'</span><span class="src-sym">; </span><span class="src-sym">}</span></li>
+<li> <span class="src-sym">}</span></li>
+<li>&nbsp;</li>
+<li> <span class="src-key">class </span><span class="src-id">DeniedClass</span></li>
+<li> <span class="src-sym">{</span></li>
+<li>     <span class="src-key">function </span><span class="src-id">call</span><span class="src-sym">(</span><span class="src-sym">) </span><span class="src-sym">{ </span><span class="src-key">return </span><span class="src-str">'DeniedClass-&gt;call()'</span><span class="src-sym">; </span><span class="src-sym">}</span></li>
+<li> <span class="src-sym">}</span></li>
+<li>&nbsp;</li>
+<li> <span class="src-inc">require_once</span><span class="src-sym">(</span><span class="src-str">'xoad.php'</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li>&nbsp;</li>
+<li> <span class="src-id"><a href="../XOAD/XOAD_Server.html">XOAD_Server</a></span><span class="src-sym">::</span><a href="../XOAD/XOAD_Server.html#methoddenyClasses">denyClasses</a><span class="src-sym">(</span><span class="src-str">'DeniedClass'</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li>&nbsp;</li>
+<li> <span class="src-key">if </span><span class="src-sym">(</span><span class="src-id"><a href="../XOAD/XOAD_Server.html">XOAD_Server</a></span><span class="src-sym">::</span><a href="../XOAD/XOAD_Server.html#methodrunServer">runServer</a><span class="src-sym">(</span><span class="src-sym">)) </span><span class="src-sym">{</span></li>
+<li>&nbsp;</li>
+<li>     <span class="src-key">exit</span><span class="src-sym">;</span></li>
+<li> <span class="src-sym">}</span></li>
+<li>&nbsp;</li>
+<li> <span class="src-php">?&gt;</span></li>
+<li> <span class="src-php">&lt;?= </span><span class="src-id"><a href="../XOAD/XOAD_Utilities.html">XOAD_Utilities</a></span><span class="src-sym">::</span><a href="../XOAD/XOAD_Utilities.html#methodheader">header</a><span class="src-sym">(</span><span class="src-sym">) </span><span class="src-php">?&gt;</span></li>
+<li>&nbsp;</li>
+<li> &lt;script type=&quot;text/javascript&quot;&gt;</li>
+<li>&nbsp;</li>
+<li> var allowedClass = <span class="src-php">&lt;?= </span><span class="src-id"><a href="../XOAD/XOAD_Client.html">XOAD_Client</a></span><span class="src-sym">::</span><a href="../XOAD/XOAD_Client.html#methodregister">register</a><span class="src-sym">(</span><span class="src-key">new </span><span class="src-id">AllowedClass</span><span class="src-sym">(</span><span class="src-sym">)) </span><span class="src-php">?&gt;</span>;</li>
+<li>&nbsp;</li>
+<li> var deniedClass = <span class="src-php">&lt;?= </span><span class="src-id"><a href="../XOAD/XOAD_Client.html">XOAD_Client</a></span><span class="src-sym">::</span><a href="../XOAD/XOAD_Client.html#methodregister">register</a><span class="src-sym">(</span><span class="src-key">new </span><span class="src-id">DeniedClass</span><span class="src-sym">(</span><span class="src-sym">)) </span><span class="src-php">?&gt;</span>;</li>
+<li>&nbsp;</li>
+<li> alert(allowedClass.call());</li>
+<li>&nbsp;</li>
+<li> // This line will throw an exception.</li>
+<li> // DeniedClass is in the denied classes list.</li>
+<li> alert(deniedClass.call());</li>
+<li>&nbsp;</li>
+<li> &lt;/script&gt;</li>
+</ol></pre></div></p><h4>Tags:</h4>
+<ul>
+	<li><b>static</b> - </li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">mixed</span>
+		<b>$classes</b> 
+		- 
+		The classes that can NOT be accessed                                 within a callback request.</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methoddispatch"></a>
+	<p></p>
+	<h3>dispatch</h3>
+	<div class="indent">
+		<p>
+		<code>string dispatch(
+)</code>
+		</p>
+	
+		<p class="linenumber">[line 355]</p>
+		<p align="center"><strong>Dispatches a client callback to the server.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - Outputs JavaString code that contains the result                     and the output of the callback.</li>
+	<li><b>static</b> - </li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+
+	<h4>Parameters:</h4>
+	<ul>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodhandleError"></a>
+	<p></p>
+	<h3>handleError</h3>
+	<div class="indent">
+		<p>
+		<code>void handleError(
+int
+$type, string
+$message)</code>
+		</p>
+	
+		<p class="linenumber">[line 475]</p>
+		<p align="center"><strong>Handles all errors that occur during the callback.
+</strong></p>
+<p>Only E_ERROR, E_PARSE, E_CORE_ERROR, E_COMPILE_ERROR and E_USER_ERROR  will halt the callback and throw an exception.</p><p></p><h4>Tags:</h4>
+<ul>
+	<li><b>static</b> - </li>
+	<li><b>access</b> - protected</li>
+</ul>
+		
+
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">int</span>
+		<b>$type</b> 
+		- 
+		Error type (compile, core, user...).</li>
+			<li>
+		<span class="type">string</span>
+		<b>$message</b> 
+		- 
+		Error message.</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodinitializeCallback"></a>
+	<p></p>
+	<h3>initializeCallback</h3>
+	<div class="indent">
+		<p>
+		<code>bool initializeCallback(
+)</code>
+		</p>
+	
+		<p class="linenumber">[line 138]</p>
+		<p align="center"><strong>Checks if the request is a client callback to the  server and initializes callback parameters.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - true if the request is a valid client callback,                     false otherwise.</li>
+	<li><b>static</b> - </li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+
+	<h4>Parameters:</h4>
+	<ul>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodisClassAllowed"></a>
+	<p></p>
+	<h3>isClassAllowed</h3>
+	<div class="indent">
+		<p>
+		<code>bool isClassAllowed(
+string
+$class)</code>
+		</p>
+	
+		<p class="linenumber">[line 785]</p>
+		<p align="center"><strong>Checks if a class can be accessed within a callback request.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - true if the class can be accessed, false if                     the class is denied and can NOT be accessed.</li>
+	<li><b>static</b> - </li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">string</span>
+		<b>$class</b> 
+		- 
+		The class name to check.</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodloadClass"></a>
+	<p></p>
+	<h3>loadClass</h3>
+	<div class="indent">
+		<p>
+		<code>void loadClass(
+string
+$className)</code>
+		</p>
+	
+		<p class="linenumber">[line 587]</p>
+		<p align="center"><strong>Loads a specified class from the classes map.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>static</b> - </li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">string</span>
+		<b>$className</b> 
+		- 
+		The class name to load. Note that all files                                 that are included in the class map will be                                 loaded.</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodmapClass"></a>
+	<p></p>
+	<h3>mapClass</h3>
+	<div class="indent">
+		<p>
+		<code>void mapClass(
+string
+$className, mixed
+$files)</code>
+		</p>
+	
+		<p class="linenumber">[line 563]</p>
+		<p align="center"><strong>Adds a specified class to the classes map.
+</strong></p>
+<p>Example:</p><p><div class="listing"><pre><ol><li> &lt;?<span class="src-id">php</span></li>
+<li>&nbsp;</li>
+<li> <span class="src-inc">require_once</span><span class="src-sym">(</span><span class="src-str">'xoad.php'</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li>&nbsp;</li>
+<li> <span class="src-id"><a href="../XOAD/XOAD_Server.html">XOAD_Server</a></span><span class="src-sym">::</span><a href="../XOAD/XOAD_Server.html#methodmapClass">mapClass</a><span class="src-sym">(</span><span class="src-str">'Calculator'</span><span class="src-sym">, </span><span class="src-str">'Calculator.class.php'</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li>&nbsp;</li>
+<li> <span class="src-id"><a href="../XOAD/XOAD_Server.html">XOAD_Server</a></span><span class="src-sym">::</span><a href="../XOAD/XOAD_Server.html#methodmapClass">mapClass</a><span class="src-sym">(</span><span class="src-str">'EnglishDictionary'</span><span class="src-sym">, </span><span class="src-key">array</span><span class="src-sym">(</span><span class="src-str">'BaseDictionary.class.php'</span><span class="src-sym">, </span><span class="src-str">'EnglishDictionary.class.php'</span><span class="src-sym">))</span><span class="src-sym">;</span></li>
+<li>&nbsp;</li>
+<li> <span class="src-id"><a href="../XOAD/XOAD_Server.html">XOAD_Server</a></span><span class="src-sym">::</span><a href="../XOAD/XOAD_Server.html#methodrunServer">runServer</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li>&nbsp;</li>
+<li> <span class="src-php">?&gt;</span></li>
+</ol></pre></div></p><h4>Tags:</h4>
+<ul>
+	<li><b>static</b> - </li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">string</span>
+		<b>$className</b> 
+		- 
+		The class name to add.</li>
+			<li>
+		<span class="type">mixed</span>
+		<b>$files</b> 
+		- 
+		The files that are required                                 to load the class.</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodnotifyObservers"></a>
+	<p></p>
+	<h3>notifyObservers</h3>
+	<div class="indent">
+		<p>
+		<code>bool notifyObservers(
+[mixed
+$event = 'default'], [mixed
+$arg = null])</code>
+		</p>
+	
+		<p class="linenumber">[line 844]</p>
+		<h4>Tags:</h4>
+<ul>
+	<li><b>access</b> - public</li>
+</ul>
+		
+<p>Overrides <a href="../XOAD/XOAD_Observable.html#methodnotifyObservers">XOAD_Observable::notifyObservers()</a> (parent method not documented)</p>
+	<h4>Parameters:</h4>
+	<ul>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodrunServer"></a>
+	<p></p>
+	<h3>runServer</h3>
+	<div class="indent">
+		<p>
+		<code>bool runServer(
+)</code>
+		</p>
+	
+		<p class="linenumber">[line 91]</p>
+		<p align="center"><strong>Checks if the request is a client callback  to the server and handles it.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - true if the request is a valid client callback,                     false otherwise.</li>
+	<li><b>static</b> - </li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+
+	<h4>Parameters:</h4>
+	<ul>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodthrowException"></a>
+	<p></p>
+	<h3>throwException</h3>
+	<div class="indent">
+		<p>
+		<code>string throwException(
+string
+$message)</code>
+		</p>
+	
+		<p class="linenumber">[line 514]</p>
+		<p align="center"><strong>Throws a XOAD callback exception.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - Outputs JavaString code that contains the                     exception message.</li>
+	<li><b>static</b> - </li>
+	<li><b>access</b> - protected</li>
+</ul>
+		
+
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">string</span>
+		<b>$message</b> 
+		- 
+		Exception message.</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+
+	<hr>
+	<a name="class_methods"></a>
+	<h2>Class Methods</h2>
+	</div>
+	<div id="credit">
+		<hr>
+		Documentation generated on Wed,  1 Feb 2006 23:01:02 -0200 by <a href="http://www.phpdoc.org">phpDocumentor 1.3.0RC3</a>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,180 @@
+{08/02/2015 12:33:33} [Debug] Query:INSERT INTO anz_empresa (data, nome, responsavel, email, logo) VALUES (now(), 'Frango assado Batschauer', 'Cristofer Batschauer', 'cristofer.batschauer@gmail.com', '') 
+{08/02/2015 12:34:26} [Debug] Query:INSERT INTO anz_user (nome, login, senha, idEmpresa, diaInicioContabil) VALUES ('Cristofer', 'cristofer.batschauer@gmail.com', '68d3f212bcb89bc74bef73e118dd379c', '20', '1') 
+{08/02/2015 12:39:36} [Debug] Query:INSERT INTO anz_categorias (idEmpresa, tipo, label) VALUES (20, 1, 'Investimento') 
+{08/02/2015 12:39:59} [Debug] Query:INSERT INTO anz_categorias (idEmpresa, tipo, label) VALUES (20, 1, 'Vendas (Bruto)') 
+{08/02/2015 12:40:32} [Debug] Query:INSERT INTO anz_categorias (idEmpresa, tipo, label) VALUES (20, 2, 'Salários') 
+{08/02/2015 12:40:49} [Debug] Query:INSERT INTO anz_categorias (idEmpresa, tipo, label) VALUES (20, 2, 'Compras') 
+{08/02/2015 12:41:03} [Debug] Query:INSERT INTO anz_categorias (idEmpresa, tipo, label) VALUES (20, 2, 'Energia') 
+{08/02/2015 12:41:11} [Debug] Query:INSERT INTO anz_categorias (idEmpresa, tipo, label) VALUES (20, 2, 'Água') 
+{08/02/2015 12:41:21} [Debug] Query:INSERT INTO anz_categorias (idEmpresa, tipo, label) VALUES (20, 2, 'Aluguel') 
+{08/02/2015 12:41:42} [Debug] Query:INSERT INTO anz_categorias (idEmpresa, tipo, label) VALUES (20, 2, 'Aquisição Equipamentos') 
+{08/02/2015 12:41:53} [Debug] Query:INSERT INTO anz_categorias (idEmpresa, tipo, label) VALUES (20, 2, 'Manutenção Equipamentos') 
+{08/02/2015 12:42:02} [Debug] Query:INSERT INTO anz_categorias (idEmpresa, tipo, label) VALUES (20, 2, 'Gás') 
+{08/02/2015 13:42:39} [Debug] MySql::setQuery Query: SELECT u.*, e.nome as nomeEmpresa, e.email FROM anz_user u
+				INNER JOIN anz_empresa e ON e.idEmpresa=u.idEmpresa
+				WHERE login= 'cristofer.batschauer@gmail.com'  
+{08/02/2015 13:43:25} [Debug] MySql::setQuery Query: UPDATE anz_user SET senha='94ddc296285b296d7c6806112d170bb1' WHERE idUser= 1 
+{08/02/2015 13:47:40} [Debug] MySql::setQuery Query: UPDATE anz_user SET senha='8f70e2a63d5849b11727a37a8ed06238' WHERE idUser= 1 
+{08/02/2015 14:10:03} [Debug] Criado Objeto Login 
+{08/02/2015 14:10:06} [Debug] Criado Objeto Login 
+{08/02/2015 14:10:10} [Debug] Criado Objeto Login 
+{08/02/2015 14:10:11} [Debug] Criado Objeto Login 
+{08/02/2015 14:10:19} [Debug] Criado Objeto Login 
+{08/02/2015 14:10:20} [Debug] Criado Objeto Login 
+{08/02/2015 14:11:07} [Debug] Criado Objeto Login 
+{08/02/2015 14:11:07} [Debug] Criado Objeto Login 
+{08/02/2015 14:11:09} [Debug] Criado Objeto Login 
+{08/02/2015 14:11:47} [Debug] Query:INSERT INTO anz_user (nome, login, senha, idEmpresa, diaInicioContabil) VALUES ('Cibele Frasson Batschauer', 'cibaecris@gmail.com', '8f70e2a63d5849b11727a37a8ed06238', '20', '1') 
+{08/02/2015 14:11:54} [Debug] Criado Objeto Login 
+{08/02/2015 14:11:54} [Debug] Criado Objeto Login 
+{08/02/2015 14:11:56} [Debug] Criado Objeto Login 
+{08/02/2015 14:12:02} [Debug] Criado Objeto Login 
+{08/02/2015 14:12:03} [Debug] Criado Objeto Login 
+{08/02/2015 14:12:03} [Debug] Criado Objeto Login 
+{08/02/2015 14:12:14} [Debug] Criado Objeto Login 
+{08/02/2015 14:12:15} [Debug] Criado Objeto Login 
+{08/02/2015 14:12:20} [Debug] Criado Objeto Login 
+{08/02/2015 14:12:21} [Debug] Criado Objeto Login 
+{08/02/2015 14:12:21} [Debug] Criado Objeto Login 
+{08/02/2015 14:12:23} [Debug] Criado Objeto Login 
+{08/02/2015 14:12:27} [Debug] Criado Objeto Login 
+{08/02/2015 14:12:27} [Debug] Criado Objeto Login 
+{08/02/2015 14:12:31} [Debug] Criado Objeto Login 
+{08/02/2015 14:17:39} [Debug] Criado Objeto Login 
+{08/02/2015 14:17:40} [Debug] Criado Objeto Login 
+{08/02/2015 14:17:40} [Debug] Criado Objeto Login 
+{08/02/2015 14:17:43} [Debug] Criado Objeto Login 
+{08/02/2015 14:17:44} [Debug] Criado Objeto Login 
+{08/02/2015 14:17:44} [Debug] Criado Objeto Login 
+{08/02/2015 14:17:44} [Debug] Criado Objeto Login 
+{08/02/2015 14:17:46} [Debug] Criado Objeto Login 
+{08/02/2015 14:17:46} [Debug] Criado Objeto Login 
+{08/02/2015 14:17:46} [Debug] Criado Objeto Login 
+{08/02/2015 14:17:52} [Debug] Criado Objeto Login 
+{08/02/2015 14:17:52} [Debug] Criado Objeto Login 
+{08/02/2015 14:17:52} [Debug] Criado Objeto Login 
+{08/02/2015 14:17:52} [Debug] Criado Objeto Login 
+{08/02/2015 14:18:01} [Debug] Criado Objeto Login 
+{08/02/2015 14:18:01} [Debug] Criado Objeto Login 
+{08/02/2015 14:18:01} [Debug] Criado Objeto Login 
+{08/02/2015 14:18:04} [Debug] Criado Objeto Login 
+{08/02/2015 14:18:05} [Debug] Criado Objeto Login 
+{08/02/2015 14:18:05} [Debug] Criado Objeto Login 
+{08/02/2015 14:18:05} [Debug] Criado Objeto Login 
+{08/02/2015 14:18:29} [Debug] Criado Objeto Login 
+{08/02/2015 14:18:29} [Debug] Criado Objeto Login 
+{08/02/2015 14:18:29} [Debug] Criado Objeto Login 
+{08/02/2015 14:18:35} [Debug] Criado Objeto Login 
+{08/02/2015 14:18:36} [Debug] Criado Objeto Login 
+{08/02/2015 14:18:36} [Debug] Criado Objeto Login 
+{08/02/2015 14:18:38} [Debug] Criado Objeto Login 
+{08/02/2015 14:18:39} [Debug] Criado Objeto Login 
+{08/02/2015 14:18:39} [Debug] Criado Objeto Login 
+{08/02/2015 14:18:39} [Debug] Criado Objeto Login 
+{08/02/2015 14:19:06} [Debug] Criado Objeto Login 
+{08/02/2015 14:19:06} [Debug] Criado Objeto Login 
+{08/02/2015 14:19:25} [Debug] Criado Objeto Login 
+{08/02/2015 14:19:25} [Debug] Criado Objeto Login 
+{08/02/2015 14:19:25} [Debug] Criado Objeto Login 
+{08/02/2015 14:19:25} [Debug] Criado Objeto Login 
+{08/02/2015 14:19:28} [Debug] Criado Objeto Login 
+{08/02/2015 14:19:28} [Debug] Criado Objeto Login 
+{08/02/2015 14:19:30} [Debug] Criado Objeto Login 
+{08/02/2015 14:19:30} [Debug] Criado Objeto Login 
+{08/02/2015 14:19:30} [Debug] Criado Objeto Login 
+{08/02/2015 14:19:30} [Debug] Criado Objeto Login 
+{08/02/2015 14:19:44} [Debug] Criado Objeto Login 
+{08/02/2015 14:19:44} [Debug] Criado Objeto Login 
+{08/02/2015 14:19:44} [Debug] Criado Objeto Login 
+{08/02/2015 14:19:52} [Debug] Criado Objeto Login 
+{08/02/2015 14:19:53} [Debug] Criado Objeto Login 
+{08/02/2015 14:19:53} [Debug] Criado Objeto Login 
+{08/02/2015 14:20:19} [Debug] Criado Objeto Login 
+{08/02/2015 14:20:20} [Debug] Criado Objeto Login 
+{08/02/2015 14:20:20} [Debug] Criado Objeto Login 
+{08/02/2015 14:20:20} [Debug] Criado Objeto Login 
+{08/02/2015 14:20:26} [Debug] Criado Objeto Login 
+{08/02/2015 14:20:26} [Debug] Criado Objeto Login 
+{08/02/2015 14:20:26} [Debug] Criado Objeto Login 
+{09/02/2015 12:59:36} [Debug] Criado Objeto Login 
+{09/02/2015 12:59:36} [Debug] Criado Objeto Login 
+{09/02/2015 13:00:00} [Debug] Criado Objeto Login 
+{09/02/2015 13:00:04} [Debug] Criado Objeto Login 
+{09/02/2015 13:00:04} [Debug] Criado Objeto Login 
+{09/02/2015 13:00:04} [Debug] Criado Objeto Login 
+{09/02/2015 13:00:11} [Debug] Criado Objeto Login 
+{09/02/2015 13:00:11} [Debug] Criado Objeto Login 
+{09/02/2015 13:00:11} [Debug] Criado Objeto Login 
+{09/02/2015 13:00:21} [Debug] Criado Objeto Login 
+{09/02/2015 13:00:24} [Debug] Criado Objeto Login 
+{09/02/2015 13:00:24} [Debug] Criado Objeto Login 
+{09/02/2015 13:00:24} [Debug] Criado Objeto Login 
+{09/02/2015 13:00:50} [Debug] Criado Objeto Login 
+{09/02/2015 13:00:50} [Debug] Criado Objeto Login 
+{09/02/2015 13:00:50} [Debug] Criado Objeto Login 
+{09/02/2015 13:01:32} [Debug] Criado Objeto Login 
+{09/02/2015 13:01:35} [Debug] Criado Objeto Login 
+{09/02/2015 13:01:35} [Debug] Criado Objeto Login 
+{09/02/2015 13:01:50} [Debug] Criado Objeto Login 
+{09/02/2015 13:02:10} [Debug] Criado Objeto Login 
+{09/02/2015 13:02:51} [Debug] Criado Objeto Login 
+{09/02/2015 13:03:13} [Debug] Criado Objeto Login 
+{09/02/2015 13:03:14} [Debug] Criado Objeto Login 
+{09/02/2015 13:03:14} [Debug] Criado Objeto Login 
+{09/02/2015 13:03:18} [Debug] Criado Objeto Login 
+{09/02/2015 13:03:18} [Debug] Criado Objeto Login 
+{09/02/2015 13:03:18} [Debug] Criado Objeto Login 
+{09/02/2015 13:03:18} [Debug] Criado Objeto Login 
+{09/02/2015 13:03:38} [Debug] Criado Objeto Login 
+{09/02/2015 13:03:38} [Debug] Criado Objeto Login 
+{09/02/2015 13:03:38} [Debug] Criado Objeto Login 
+{09/02/2015 13:06:03} [Debug] Query:INSERT INTO anz_empresa (data, nome, responsavel, email, logo) VALUES (now(), 'Diamente', 'Gilson Diamente', '', '') 
+{09/02/2015 13:08:39} [Debug] Query:INSERT INTO anz_user (nome, login, senha, idEmpresa, diaInicioContabil) VALUES ('Gilson Diamente', 'diamente52@gmail.com', '03580b50427d2f1fcf9d9c5358b8259f', '21', '27') 
+{09/02/2015 13:20:11} [Debug] Criado Objeto Login 
+{09/02/2015 13:20:13} [Debug] Criado Objeto Login 
+{09/02/2015 13:20:13} [Debug] Criado Objeto Login 
+{09/02/2015 13:42:45} [Debug] Criado Objeto Login 
+{09/02/2015 13:42:45} [Debug] Criado Objeto Login 
+{09/02/2015 23:21:14} [Debug] Criado Objeto Login 
+{09/02/2015 23:21:14} [Debug] Criado Objeto Login 
+{09/02/2015 23:21:18} [Debug] Criado Objeto Login 
+{09/02/2015 23:21:19} [Debug] Criado Objeto Login 
+{09/02/2015 23:21:19} [Debug] Criado Objeto Login 
+{09/02/2015 23:21:19} [Debug] Criado Objeto Login 
+{09/02/2015 23:21:22} [Debug] Criado Objeto Login 
+{09/02/2015 23:21:22} [Debug] Criado Objeto Login 
+{09/02/2015 23:21:22} [Debug] Criado Objeto Login 
+{09/02/2015 23:21:35} [Debug] Criado Objeto Login 
+{09/02/2015 23:21:36} [Debug] Criado Objeto Login 
+{09/02/2015 23:21:36} [Debug] Criado Objeto Login 
+{09/02/2015 23:21:36} [Debug] Criado Objeto Login 
+{09/02/2015 23:21:51} [Debug] Criado Objeto Login 
+{09/02/2015 23:21:51} [Debug] Criado Objeto Login 
+{09/02/2015 23:21:51} [Debug] Criado Objeto Login 
+{12/02/2015 09:47:22} [Debug] Criado Objeto Login 
+{12/02/2015 09:47:22} [Debug] Criado Objeto Login 
+{12/02/2015 09:47:28} [Debug] Criado Objeto Login 
+{12/02/2015 09:47:29} [Debug] Criado Objeto Login 
+{12/02/2015 09:47:29} [Debug] Criado Objeto Login 
+{12/02/2015 09:47:29} [Debug] Criado Objeto Login 
+{12/02/2015 09:47:31} [Debug] Criado Objeto Login 
+{12/02/2015 09:47:31} [Debug] Criado Objeto Login 
+{12/02/2015 09:47:31} [Debug] Criado Objeto Login 
+{12/02/2015 09:47:36} [Debug] Criado Objeto Login 
+{12/02/2015 09:47:37} [Debug] Criado Objeto Login 
+{12/02/2015 09:47:37} [Debug] Criado Objeto Login 
+{12/02/2015 09:47:37} [Debug] Criado Objeto Login 
+{12/02/2015 09:47:53} [Debug] Criado Objeto Login 
+{12/02/2015 09:47:53} [Debug] Criado Objeto Login 
+{12/02/2015 09:47:53} [Debug] Criado Objeto Login 
+{24/02/2015 14:38:07} [Debug] Criado Objeto Login 
+{24/02/2015 14:38:08} [Debug] Criado Objeto Login 
+{24/02/2015 14:38:17} [Debug] Criado Objeto Login 
+{24/02/2015 14:38:18} [Debug] Criado Objeto Login 
+{24/02/2015 14:38:18} [Debug] Criado Objeto Login 
+{24/02/2015 14:38:18} [Debug] Criado Objeto Login 
+{24/02/2015 14:38:38} [Debug] Criado Objeto Login 
+{24/02/2015 14:38:38} [Debug] Criado Objeto Login 
+{24/02/2015 14:38:38} [Debug] Criado Objeto Login 
+{24/02/2015 16:56:46} [Debug] Criado Objeto Login 
+{24/02/2015 16:56:46} [Debug] Criado Objeto Login 

@@ -1,0 +1,56 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24/02/2015, 21:23:00
+    Author     : Cristofer
+*/
+
+
+
+.Erros {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #F00;
+	padding: 5px;
+	height: 35px;
+	width: 100%;
+	display: none;
+}
+
+.positivo {
+	color: #00F;
+}
+
+.negativo {
+	color: #F00;
+}
+
+#step2Valor {
+	font-size: 24px;
+	font-weight: bold;
+	text-decoration: none;
+}
+@media only screen and (min-width: 768px) { 
+	.ui-mobile [data-role=page],.ui-mobile [data-role=dialog],.ui-page {
+		max-width:768px;
+		margin: 0 auto;
+		top: 0;
+		left: 0;
+		position:relative;
+		border: 0;
+
+	}
+	body   {
+		margin: 0 auto;
+		top: 0;
+		left: 0;
+		background-color:#666;		
+	}
+	#extratoConta_1   {
+		max-width: 640px;
+	}
+}

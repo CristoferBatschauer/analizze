@@ -1,0 +1,543 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<title>Docs For Class XOAD_Utilities</title>
+	<link rel="stylesheet" type="text/css" id="layout" href="../media/layout.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="../media/style.css" media="all">
+	<link rel="stylesheet" type="text/css" href="../media/print.css" media="print">
+</head>
+
+<body>
+<div id="header">
+	<div id="navLinks">
+		[ <a href="../classtrees_XOAD.html">Class Tree: XOAD</a> ]
+		[ <a href="../elementindex_XOAD.html">Index: XOAD</a> ]
+		[ <a href="../elementindex.html">All elements</a> ]
+	</div>
+	<div id="packagePosition">
+		<div id="packageTitle2">XOAD</div>
+		<div id="packageTitle">XOAD</div>
+		<div id="elementPath"> &middot; </div>
+	</div>
+</div>
+
+<div id="nav" class="small">
+	<div id="packages">
+		Packages:
+					<p><a href="../li_XOAD.html">XOAD</a></p>
+			</div>
+
+				<div id="index">
+			<div id="files">
+								Files:<br>
+								<a href="../XOAD/_Client_class_php.html">		Client.class.php
+		</a><br>
+			<a href="../XOAD/_Meta_class_php.html">		Meta.class.php
+		</a><br>
+			<a href="../XOAD/_Observable_class_php.html">		Observable.class.php
+		</a><br>
+			<a href="../XOAD/_Observer_class_php.html">		Observer.class.php
+		</a><br>
+			<a href="../XOAD/_Serializer_class_php.html">		Serializer.class.php
+		</a><br>
+			<a href="../XOAD/_Server_class_php.html">		Server.class.php
+		</a><br>
+			<a href="../XOAD/_Utilities_class_php.html">		Utilities.class.php
+		</a><br>
+		subpackage <b>XOAD_Events</b><br>			<a href="../XOAD/XOAD_Events/_events_storage_File_class_php.html">		File.class.php
+		</a><br>
+			<a href="../XOAD/XOAD_Events/_events_storage_pg_class_php.html">		MySQL.class.php
+		</a><br>
+			<a href="../XOAD/XOAD_Events/_events_storage_PearDB_class_php.html">		PearDB.class.php
+		</a><br>
+			<a href="../XOAD/XOAD_Events/_events_Storage_class_php.html">		Storage.class.php
+		</a><br>
+				</div>
+			<div id="classes">
+				Classes:<br>
+								<a href="../XOAD/XOAD_Client.html">		XOAD_Client
+		</a><br>
+			<a href="../XOAD/XOAD_Meta.html">		XOAD_Meta
+		</a><br>
+			<a href="../XOAD/XOAD_Observable.html">		XOAD_Observable
+		</a><br>
+			<a href="../XOAD/XOAD_Observer.html">		XOAD_Observer
+		</a><br>
+			<a href="../XOAD/XOAD_Serializer.html">		XOAD_Serializer
+		</a><br>
+			<a href="../XOAD/XOAD_Server.html">		XOAD_Server
+		</a><br>
+			<a href="../XOAD/XOAD_Utilities.html">		XOAD_Utilities
+		</a><br>
+		<b>XOAD_Events</b><br>			<a href="../XOAD/XOAD_Events/XOAD_Events_Storage.html">		XOAD_Events_Storage
+		</a><br>
+			<a href="../XOAD/XOAD_Events/XOAD_Events_Storage_File.html">		XOAD_Events_Storage_File
+		</a><br>
+			<a href="../XOAD/XOAD_Events/XOAD_Events_Storage_MySQL.html">		XOAD_Events_Storage_MySQL
+		</a><br>
+			<a href="../XOAD/XOAD_Events/XOAD_Events_Storage_PearDB.html">		XOAD_Events_Storage_PearDB
+		</a><br>
+				</div>
+		</div>
+	</div>
+
+<div id="body">
+	    		<h1>Class: XOAD_Utilities</h1>
+	<p style="margin: 0px;">Source Location: /Utilities.class.php</p>
+	
+
+<div class="leftcol">
+	<h3><a href="#class_details">Class Overview</a> <span class="smalllinenumber">[line 29]</span></h3>
+	<div id="classTree"><pre><a href="../XOAD/XOAD_Observable.html">XOAD_Observable</a>
+   |
+   --XOAD_Utilities</pre>
+</div>
+	<div class="small">
+	<p>XOAD Utilities Class.</p>
+		<h4>Author(s):</h4>
+	<ul>
+													<li>Stanimir Angeloff</li>
+						</ul>
+	<h4>Version:</h4>
+	<ul>
+								<li>0.6.0.0</li>
+											</ul>
+
+	<h4>Copyright:</h4>
+	<ul>
+													</li>
+	</div>
+</div>
+
+<div class="middlecol">
+	<h3><a href="#class_vars">Variables</a></h3>
+	<ul class="small">
+			</ul>
+	<h3><a href="#class_consts">Constants</a></h3>
+	<ul class="small">
+			</ul>
+</div>
+<div class="rightcol">
+	<h3><a href="#class_methods">Methods</a></h3>
+	<ul class="small">
+				<li><a href="../XOAD/XOAD_Utilities.html#methodaddObserver">addObserver</a></li>
+				<li><a href="../XOAD/XOAD_Utilities.html#methodcaseConvert">caseConvert</a></li>
+				<li><a href="../XOAD/XOAD_Utilities.html#methodcustomHeader">customHeader</a></li>
+				<li><a href="../XOAD/XOAD_Utilities.html#methodeventsHeader">eventsHeader</a></li>
+				<li><a href="../XOAD/XOAD_Utilities.html#methodextensionHeader">extensionHeader</a></li>
+				<li><a href="../XOAD/XOAD_Utilities.html#methodgetMicroTime">getMicroTime</a></li>
+				<li><a href="../XOAD/XOAD_Utilities.html#methodgetRequestUrl">getRequestUrl</a></li>
+				<li><a href="../XOAD/XOAD_Utilities.html#methodgetType">getType</a></li>
+				<li><a href="../XOAD/XOAD_Utilities.html#methodheader">header</a></li>
+				<li><a href="../XOAD/XOAD_Utilities.html#methodisAssocArray">isAssocArray</a></li>
+				<li><a href="../XOAD/XOAD_Utilities.html#methodnotifyObservers">notifyObservers</a></li>
+			</ul>
+</div>
+
+<div id="content">
+<hr>
+	<div class="contents">
+	</div>
+
+	<div class="leftCol">
+	<h2>Inherited Variables</h2>
+		<h2>Inherited Constants</h2>
+		</div>
+
+	<div class="rightCol">
+	<h2>Inherited Methods</h2>
+			<div class="indent">
+		<h3>Class: <a href="../XOAD/XOAD_Observable.html">XOAD_Observable</a></h3>
+		<dl class="small">
+						<dt>
+				<a href="../XOAD/XOAD_Observable.html#methodaddObserver">XOAD_Observable::addObserver()</a>
+			</dt>
+			<dd>
+				
+			</dd>
+					<dt>
+				<a href="../XOAD/XOAD_Observable.html#methodnotifyObservers">XOAD_Observable::notifyObservers()</a>
+			</dt>
+			<dd>
+				
+			</dd>
+				</dl>
+		</div>
+		</div>
+	<br clear="all">
+	<hr>
+
+	<a name="class_details"></a>
+	<h2>Class Details</h2>
+	<p align="center"><strong>XOAD Utilities Class.
+</strong></p>
+<p>This class defines extended functions that  the XOAD package uses and overrides some  deprecated functions, like gettype(...).</p><p></p><h4>Tags:</h4>
+<ul>
+	<li><b>version</b> - 0.6.0.0</li>
+	<li><b>author</b> - Stanimir Angeloff</li>
+</ul>
+	<p class="small" style="color: #334B66;">[ <a href="#top">Top</a> ]</p>
+
+	<hr>
+	<a name="class_vars"></a>
+	<h2>Class Variables</h2>
+	
+	<hr>
+	<a name="class_methods"></a>
+	<h2>Class Methods</h2>
+		<a name="methodaddObserver"></a>
+	<p></p>
+	<h3>addObserver</h3>
+	<div class="indent">
+		<p>
+		<code>string addObserver(
+mixed
+&$observer)</code>
+		</p>
+	
+		<p class="linenumber">[line 406]</p>
+		<p align="center"><strong>Adds a <a href="../XOAD/XOAD_Utilities.html">XOAD_Utilities</a> events observer.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - true on success, false otherwise.</li>
+	<li><b>static</b> - </li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+<p>Overrides <a href="../XOAD/XOAD_Observable.html#methodaddObserver">XOAD_Observable::addObserver()</a> (parent method not documented)</p>
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">mixed</span>
+		<b>$observer</b> 
+		- 
+		The observer object to add (must extend <a href="../XOAD/XOAD_Observer.html">XOAD_Observer</a>).</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodcaseConvert"></a>
+	<p></p>
+	<h3>caseConvert</h3>
+	<div class="indent">
+		<p>
+		<code>string caseConvert(
+string
+$text)</code>
+		</p>
+	
+		<p class="linenumber">[line 389]</p>
+		<p align="center"><strong>Returns the input string with all alphabetic characters  converted to lower or upper case depending on the configuration.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - The converted text.</li>
+	<li><b>static</b> - </li>
+</ul>
+		
+
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">string</span>
+		<b>$text</b> 
+		- 
+		The text to convert to lower/upper case.</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodcustomHeader"></a>
+	<p></p>
+	<h3>customHeader</h3>
+	<div class="indent">
+		<p>
+		<code>bool customHeader(
+string
+$fileName, [string
+$optimizedFileName = null])</code>
+		</p>
+	
+		<p class="linenumber">[line 347]</p>
+		<p align="center"><strong>Registers custom client header file.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - true on success, false otherwise.</li>
+	<li><b>static</b> - </li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">string</span>
+		<b>$fileName</b> 
+		- 
+		The JavaScript file name.                                         This file must be located in the                                         base folder.</li>
+			<li>
+		<span class="type">string</span>
+		<b>$optimizedFileName</b> 
+		- 
+		The optimized JavaScript file name.                                         This file must be located in the                                         base folder.</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodeventsHeader"></a>
+	<p></p>
+	<h3>eventsHeader</h3>
+	<div class="indent">
+		<p>
+		<code>string eventsHeader(
+[string
+$callbackUrl = null])</code>
+		</p>
+	
+		<p class="linenumber">[line 254]</p>
+		<p align="center"><strong>Registers XOAD Events header data.
+</strong></p>
+<p>You should call this method after XOAD_Utilities::header.</p><p>XOAD Events header data includes server time and callback URL.</p><p></p><h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - HTML code to initialize XOAD Events.</li>
+	<li><b>static</b> - </li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">string</span>
+		<b>$callbackUrl</b> 
+		- 
+		XOAD Events callback URL.</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodextensionHeader"></a>
+	<p></p>
+	<h3>extensionHeader</h3>
+	<div class="indent">
+		<p>
+		<code>bool extensionHeader(
+string
+$extension, string
+$fileName, [string
+$optimizedFileName = null])</code>
+		</p>
+	
+		<p class="linenumber">[line 290]</p>
+		<p align="center"><strong>Registers XOAD extension client header file.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - true on success, false otherwise.</li>
+	<li><b>static</b> - </li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">string</span>
+		<b>$extension</b> 
+		- 
+		The name of the XOAD extension.</li>
+			<li>
+		<span class="type">string</span>
+		<b>$fileName</b> 
+		- 
+		The extension JavaScript file name.                                         This file must be located in the                                         extension base folder.</li>
+			<li>
+		<span class="type">string</span>
+		<b>$optimizedFileName</b> 
+		- 
+		The optimized extension JavaScript file name.                                         This file must be located in the                                         extension base folder.</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodgetMicroTime"></a>
+	<p></p>
+	<h3>getMicroTime</h3>
+	<div class="indent">
+		<p>
+		<code>float getMicroTime(
+)</code>
+		</p>
+	
+		<p class="linenumber">[line 158]</p>
+		<p align="center"><strong>Return current UNIX timestamp with microseconds.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - Returns the float 'sec,msec' where 'sec' is the                     current time measured in the number of seconds since                     the Unix Epoch (0:00:00 January 1, 1970 GMT), and                     'msec' is the microseconds part.</li>
+	<li><b>static</b> - </li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+
+	<h4>Parameters:</h4>
+	<ul>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodgetRequestUrl"></a>
+	<p></p>
+	<h3>getRequestUrl</h3>
+	<div class="indent">
+		<p>
+		<code>string getRequestUrl(
+)</code>
+		</p>
+	
+		<p class="linenumber">[line 176]</p>
+		<p align="center"><strong>Returns the URL for the current request (includings  the query string).
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - Current request URL.</li>
+	<li><b>static</b> - </li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+
+	<h4>Parameters:</h4>
+	<ul>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodgetType"></a>
+	<p></p>
+	<h3>getType</h3>
+	<div class="indent">
+		<p>
+		<code>string getType(
+mixed
+$var)</code>
+		</p>
+	
+		<p class="linenumber">[line 104]</p>
+		<p align="center"><strong>Gets the type of a variable.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - Possibles values for the returned string are: <ul><li>&quot;bool&quot;</li><li>&quot;int&quot;</li><li>&quot;float&quot;</li><li>&quot;string&quot;</li><li>&quot;s_array&quot;</li><li>&quot;a_array&quot;</li><li>&quot;object&quot;</li><li>&quot;null&quot;</li><li>&quot;unknown&quot;</li></ul></li>
+	<li><b>static</b> - </li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">mixed</span>
+		<b>$var</b> 
+		- 
+		The source variable.</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodheader"></a>
+	<p></p>
+	<h3>header</h3>
+	<div class="indent">
+		<p>
+		<code>string header(
+[string
+$base = '.'], [bool
+$optimized = true])</code>
+		</p>
+	
+		<p class="linenumber">[line 202]</p>
+		<p align="center"><strong>Registers XOAD client header files.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - HTML code to include XOAD client files.</li>
+	<li><b>static</b> - </li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">string</span>
+		<b>$base</b> 
+		- 
+		Base XOAD folder.</li>
+			<li>
+		<span class="type">bool</span>
+		<b>$optimized</b> 
+		- 
+		true to include optimized headers, false otherwise.</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodisAssocArray"></a>
+	<p></p>
+	<h3>isAssocArray</h3>
+	<div class="indent">
+		<p>
+		<code>bool isAssocArray(
+mixed
+$var)</code>
+		</p>
+	
+		<p class="linenumber">[line 44]</p>
+		<p align="center"><strong>Checks if an array is an associative array.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - true if $var is an associative array, false                     if $var is a sequential array.</li>
+	<li><b>static</b> - </li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">mixed</span>
+		<b>$var</b> 
+		- 
+		The array to check.</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodnotifyObservers"></a>
+	<p></p>
+	<h3>notifyObservers</h3>
+	<div class="indent">
+		<p>
+		<code>bool notifyObservers(
+[mixed
+$event = 'default'], [mixed
+$arg = null])</code>
+		</p>
+	
+		<p class="linenumber">[line 418]</p>
+		<h4>Tags:</h4>
+<ul>
+	<li><b>access</b> - public</li>
+</ul>
+		
+<p>Overrides <a href="../XOAD/XOAD_Observable.html#methodnotifyObservers">XOAD_Observable::notifyObservers()</a> (parent method not documented)</p>
+	<h4>Parameters:</h4>
+	<ul>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+
+	<hr>
+	<a name="class_methods"></a>
+	<h2>Class Methods</h2>
+	</div>
+	<div id="credit">
+		<hr>
+		Documentation generated on Wed,  1 Feb 2006 23:01:06 -0200 by <a href="http://www.phpdoc.org">phpDocumentor 1.3.0RC3</a>
+	</div>
+</div>
+</body>
+</html>

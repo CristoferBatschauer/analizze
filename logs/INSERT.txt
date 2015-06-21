@@ -1,0 +1,12 @@
+[20-06-2015 15:31:20/]-INSERT INTO anz_lancamentos (dataLancamento, valor, vencimento, descricao, parcelas, idStatus, idCat, idUser)
+			VALUES (NOW(), -135, \'2015-07-27\', \'Nenhuma nota registrada\', \'1/120\', 1, 91, 1)
+[20-06-2015 15:31:20/]-RODOU
+[20-06-2015 15:31:20/]-INSERT INTO anz_lancamentos (dataLancamento, valor, vencimento, descricao, parcelas, idStatus, idCat, idUser, idLancPai)
+					VALUES (NOW(), -135, \'2015-08-27\', \'Nenhuma nota registrada\', \'2/120\', 1, 91, 1, )
+[20-06-2015 15:31:20/]-RODOU
+[21-06-2015 16:41:45/]-INSERT INTO anz_empresa (data, nome, responsavel, email, logo) VALUES (now(), \'\', \'\', \'\', \'\')
+[21-06-2015 16:41:45/]-RODOU
+[21-06-2015 16:42:12/]-INSERT INTO anz_empresa (data, nome, responsavel, email, logo) VALUES (now(), \'\', \'\', \'\', \'\')
+[21-06-2015 16:42:12/]-RODOU
+[21-06-2015 16:42:37/]-INSERT INTO anz_empresa (data, nome, responsavel, email, logo) VALUES (now(), \'\', \'\', \'\', \'\')
+[21-06-2015 16:42:37/]-RODOU
